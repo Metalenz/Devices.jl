@@ -34,12 +34,10 @@ uuid = "159f3aea-2a34-519c-b102-8c37f9878175"
 version = "0.5.6"
 
 [[Clipper]]
-deps = ["BinaryProvider", "Libdl"]
-git-tree-sha1 = "e81b7452c06d9ceb0e4c1c5bfd2a8a663ee2a84d"
-repo-rev = "dep07"
-repo-url = "Clipper"
+deps = ["BinaryProvider", "Libdl", "Test"]
+git-tree-sha1 = "aa7e547cf1da6b8399462cfa2ea207c1cc2b6521"
 uuid = "c8f6d549-b3ab-5508-a0d1-48fe138e8cc1"
-version = "0.5.0+"
+version = "0.5.0"
 
 [[ColorTypes]]
 deps = ["FixedPointNumbers", "Random", "Test"]
