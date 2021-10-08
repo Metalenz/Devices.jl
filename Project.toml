@@ -1,7 +1,7 @@
 name = "Devices"
 uuid = "49b58aa2-9f9d-54a4-906a-d5a6e498504f"
 author = [""]
-version = "0.1.0"
+version = "0.5.1"
 
 [deps]
 Cairo = "159f3aea-2a34-519c-b102-8c37f9878175"
@@ -15,6 +15,7 @@ IntervalSets = "8197267c-284f-5f27-9208-e0e47529a953"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
-WebIO = "0f1e0344-ec1d-5b48-a673-e5cf874b6c29"
+
+[compat]
+Clipper = "0.6.0"

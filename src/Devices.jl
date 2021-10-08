@@ -1,13 +1,12 @@
 module Devices
-using Random
-using LinearAlgebra
+using Random, LinearAlgebra
 using ForwardDiff
 using FileIO
 include("units.jl")
 
 import StaticArrays
 import Clipper
-import Clipper: cclipper
+import Clipper: libcclipper
 import FileIO: save, load
 
 import Base: length, show, eltype, intersect!
