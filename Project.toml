@@ -1,7 +1,7 @@
 name = "Devices"
 uuid = "49b58aa2-9f9d-54a4-906a-d5a6e498504f"
 author = [""]
-version = "0.5.1"
+version = "0.5.2"
 
 [deps]
 Cairo = "159f3aea-2a34-519c-b102-8c37f9878175"
