@@ -7,7 +7,6 @@ include("units.jl")
 import StaticArrays
 import Clipper
 import Clipper: libcclipper
-import FileIO: save, load
 
 import Base: length, show, eltype, intersect!
 import Unitful: Length, LengthUnits, DimensionlessQuantity, NoUnits, DimensionError
@@ -51,7 +50,7 @@ function __init__()
     global _coffset = Ref(Clipper.ClipperOffset())
     # The magic bytes are the GDS HEADER tag (0x0002), preceded by the number of
     # bytes in total (6 == 0x0006) for the HEADER record.
-    add_format(format"GDS", UInt8[0x00, 0x06, 0x00, 0x02], ".gds")
+    add_format(format"GDS", UInt8[0x00, 0x06, 0x00, 0x02], ".gds", [Devices.GDS, FileIO.SAVE])
 end
 
 # The following functions are imported by submodules and have methods

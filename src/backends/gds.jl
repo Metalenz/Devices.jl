@@ -10,7 +10,7 @@ import ..Rectangles: Rectangle
 import ..Polygons: Polygon
 using ..Cells
 
-import FileIO: File, @format_str, load, save, stream, magic, skipmagic
+import FileIO: File, @format_str, load, stream, magic, skipmagic
 
 export GDS64
 export gdsbegin, gdsend, gdswrite
